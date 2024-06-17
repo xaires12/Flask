@@ -1,0 +1,16 @@
+##########
+2024-05-13
+##########
+
+Lista użytkowników, którzy nie odnaleźli wszystkich krasnali
+
+:file:`../../src/users_not_all_found.sql`
+
+Liczy ile krasnali znalazł każdy z użytkowników i pokazuje tych, którzy znaleźli mniej niż liczba wszystkich krasnali.
+
+
+Lista krasnali, które można losować danemu użytkownikowi
+
+:file:`../../src/gnomes_to_draw.sql`
+
+Wybiera krasnale, które nie zostały odwiedzone przez danego użytkownika.

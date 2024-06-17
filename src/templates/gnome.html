@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head>
+    <title>Gnome Details</title>
+</head>
+<body>
+    <h1>Gnome Details</h1>
+    <p>Name: {{ gnome['name'] }}</p>
+    <p>Longitude: {{ gnome['longitude'] }}</p>
+    <p>Latitude: {{ gnome['latitude'] }}</p>
+    <img src="{{ image_url }}" alt="Photo of {{ gnome['name'] }}">
+    <a href="/gnomes">Back to List</a>
+</body>
+</html>

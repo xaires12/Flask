@@ -1,0 +1,8 @@
+##########
+2024-05-14
+##########
+
+Zapis pliku binarnego do bazy SQLite jest realizowany w dwóch etapach:
+
+1.  Odczyt pliku w trybie "rb".
+2.  Zapis do tabeli z wykorzystaniem ``sqlite3.Binary()``.

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wszystkie wizyty</title>
+</head>
+<body>
+    <meta charset="UTF-8">
+    <table border = 1>
+         <thead>
+            <td>Visit ID</td>
+            <td>User ID</td>
+         </thead>
+
+    {% for row in rows %}
+            <tr>
+               <td><a href="/visit/{{ row['visit_id'] }}">{{ row['visit_id'] }}</a></td>
+               <td>{{ row['user_id'] }}</td>
+            </tr>
+</body>
+</html>

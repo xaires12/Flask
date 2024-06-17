@@ -1,0 +1,19 @@
+##########
+2024-05-19
+##########
+
+Ustalenia:
+
+1.  Zmiana: komentarz dotyczy samego krasnoludka, nie *znalezienia* krasnoludka.
+
+2.  Pliki (w JSON) są kodowane `base64`.
+
+3.  Dane zwrotne z serwera WWW są przekazywane statusami
+    lub, przy prośbie o dane, statusami i plikiem JSON.
+
+    -   200 OK
+        gdy dane otrzymano i zostały popraw nie przetworzone
+
+    -   409 Conflict
+        gdy dane otrzymano, ale ich procesowanie nie było możliwe z powodu
+        konfliktu, np. dany krasnoludek już był znaleziony przez daną osobę 

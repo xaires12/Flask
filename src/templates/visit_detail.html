@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visit Details</title>
+</head>
+<body>
+    <h1>Visit Details</h1>
+    <p>User ID: {{ visit['user_id'] }}</p>
+    <p>Gnome Name: {{ visit['name'] }}</p>
+    <p>Visit Date: {{ visit['visit_date'] }}</p>
+    {% if image_url %}
+    <img src="{{ image_url }}" alt="Photo of {{ visit['name'] }}">
+    {% else %}
+    <p>No photo available.</p>
+    {% endif %}
+    <a href="/">Back to Home</a>
+</body>
+</html>
+

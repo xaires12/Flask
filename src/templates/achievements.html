@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Achievements</title>
+</head>
+<body>
+    <h1>Achievements</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Level ID</th>
+                <th>Name</th>
+                <th>Gnome Count</th>
+                <th>Time Max (days)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for achievement in achievements %}
+            <tr>
+                <td>{{ achievement['level_id'] }}</td>
+                <td>{{ achievement['name'] }}</td>
+                <td>{{ achievement['gnome_count'] }}</td>
+                <td>{{ achievement['time_max'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
